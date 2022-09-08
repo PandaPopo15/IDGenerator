@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="back">
+    <form>
+      <h3>Fill in your credentials...</h3>
+  
+      <label>Full Name</label>
+      <input type="text" id="inputName" placeholder="FirstName, Middle Initial, LastName" required>
+      <label>Course</label>
+      <select name="courses" id="inputCourse" required>
+        <option value="BSIT">Bachelor of Science in Information Technology</option>
+        <option value="BSAB">Bachelor of Science in AgriBusiness</option>
+        <option value="BSEEd">Bachelor of Science in Elementary Education</option>
+        <option value="BSSEd">Bachelor of Science in Secondary Education</option>
+        <option value="BSPE">Bachelor of Science in Physical Education</option>
+        <option value="BSECE">Bachelor in Early Childhood Education</option>
+        <option value="BSAgri">Bachelor of Science in Agriculture</option>
+        <option value="BAS">Bachelor in Animal Science</option>
+        <option value="BSF">Bachelor of Science in Forestry</option>
+        <option value="BST">Bachelor in Sugar Technology</option>
+        <option value="BSCrim">Bachelor of Science in Criminilogy</option>
+        <option value="BSABE">BS Agricultural and Biosystems Engineering</option>
+        <option value="BSME">Bachelor of Science in Mechanical Engineering</option>
+        <option value="BSEE">Bachelor of Science in Electrical Engineering</option>
+      </select>
+      <label>Year</label>
+      <select name="year" id="inputYear" required>
+        <option value="1st">1st Year</option>
+        <option value="2nd">2nd Year</option>
+        <option value="3rd">3rd Year</option>
+        <option value="4th">4th Year</option>
+      </select>
+      <label>Student No.</label>
+      <input type="text" id="inputIDNum"  placeholder="Id Number..." required>
+      <label>Birth Date</label>
+      <input type="date" id="inputBirth"  placeholder="Date of birth..." required>
+      <label for="file" class="upload">Upload your Image</label>
+      <br>
+      <span>Please Choose an Appropriate Image!</span>
+      <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
+    </form>
+
+    
+      
+
+
+    <div class="container">
+      <canvas id="generator" class="card">
+
+        <header id="head">
+          <div class="camp">
+            <h4>Student ID</h4>
+            <span>Central Philippines State University</span>
+          </div>
+          <img src="./cpsulogo.png" id="logo">
+        </header>
+
+        <div class="content">
+          <img src="./bg.jpg" id="logo2">
+          <img src="" id="imgDisplayed">
+          <ul>
+            <li id="name"></li>
+            <li id="birth"></li>
+            <li id="courseYear"></li>
+            <li>ID No. :<span id="idNum"></span></li>
+          </ul>
+        </div>
+
+    </canvas>
+    <button id="down">Download</button>
+    <button type="submit" id="view">View Sample</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="https://web.facebook.com/SenpairazorAgainstTheWrld" target="_blank" class="credits">Created by: Kyiel Reyn Lagura</a>
+  </div>
+
+
+  <script src="main.js"></script>
+  
+
+  
+</body>
+</html>
